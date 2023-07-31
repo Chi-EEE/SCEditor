@@ -659,8 +659,6 @@ namespace SCEditor.ScOld
             loadInfoFile();
 
             sw.Stop();
-            Program.Interface.Text = $@"SC Editor :  {Path.GetFileNameWithoutExtension(_textureFile)}";
-            Program.Interface.Update();
             Console.WriteLine(@"SC File loading finished in {0}ms", sw.Elapsed.TotalMilliseconds);
         }
 

@@ -370,7 +370,6 @@ namespace SCEditor.Features
 
                 if (initialPoints.Count == 0)
                 {
-                    MessageBox.Show("initialPoints empty.");
                     return null;
                 }
 
@@ -378,7 +377,6 @@ namespace SCEditor.Features
 
                 if (_potentialPoints.Count == 0)
                 {
-                    MessageBox.Show("_potentialPoints empty.");
                     return null;
                 }
 
@@ -393,9 +391,6 @@ namespace SCEditor.Features
                 }
 
                 List<(PointF, int)> resultInt = PointDistanceInt.Where((x) => x.Item2 == PointDistanceInt.Min(y => y.Item2)).ToList();
-
-                if (resultInt.Count == 0)
-                    MessageBox.Show("uh oh");
 
                 PointF finalPoint = resultInt[0].Item1;
 
@@ -630,9 +625,6 @@ namespace SCEditor.Features
                 {
                     if (pointListOutput.Count == 0)
                     {
-                        if (swapYAxis)
-                            MessageBox.Show("UH OH");
-
                         index = 0;
                         swapYAxis = true;
                     }

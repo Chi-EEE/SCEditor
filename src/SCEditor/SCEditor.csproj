@@ -4,8 +4,8 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>SCEditor</RootNamespace>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <UseWindowsForms>true</UseWindowsForms>
-    <UseWPF>true</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <UseWPF>False</UseWPF>
 	<LangVersion>latest</LangVersion>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
   </PropertyGroup>
@@ -28,7 +28,7 @@
     <ApplicationIcon>logo_dark.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject />
+    <StartupObject>SCEditor.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Update="System">
@@ -64,9 +64,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Update="logo_dark.ico">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="lzham.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

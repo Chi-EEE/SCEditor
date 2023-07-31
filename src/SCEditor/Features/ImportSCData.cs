@@ -14,7 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Shapes;
+
 using Shape = SCEditor.ScOld.Shape;
 
 namespace SCEditor.Features
@@ -403,7 +403,7 @@ namespace SCEditor.Features
                         continue;
                     }
 
-                    _scFile.addColor(scToImportFrom.getColors(storageID)[colorID],(_scFile.GetTransformStorage().Count - 1));
+                    _scFile.addColor(scToImportFrom.getColors(storageID)[colorID], (_scFile.GetTransformStorage().Count - 1));
                     _scFile.addPendingColor(scToImportFrom.getColors(storageID)[colorID], (_scFile.GetTransformStorage().Count - 1));
                 }
 
